@@ -6,7 +6,7 @@ library(dplyr)
 
 
 ui <- dashboardPage(
-  dashboardHeader(title = "AGERGS"),
+  dashboardHeader(title = "SHINYAPP1"),
   
   
   ## Sidebar content
@@ -169,7 +169,7 @@ observeEvent(
     
     valueBox(
       formatC(NEMP.LC, format="d", big.mark=',')
-      ,'Numero de Empresas enviados no SIA '
+      ,'Num Total de Empresas no sistema '
       ,icon = icon("stats",lib='glyphicon')
       ,color = "black")
   }) 
@@ -179,7 +179,7 @@ observeEvent(
     
     valueBox(
       formatC(NDATA.LC, format="d", big.mark=',')
-      ,'Numero de meses enviados no SIA '
+      ,'Num Total de meses enviados'
       ,icon = icon("stats",lib='glyphicon')
       ,color = "black")
   }) 
@@ -191,7 +191,7 @@ observeEvent(
     
     valueBox(
       formatC(NMES.LC, format="d", big.mark=',')
-      ,'Meses enviados no SIA '
+      ,'Meses enviados por empresa '
       ,icon = icon("stats",lib='glyphicon')
       ,color = "black")
     
@@ -204,7 +204,7 @@ observeEvent(
     
     valueBox(
       formatC(NLINHA.LC, format="d", big.mark=',')
-      ,'Linhas da empresa no SIA '
+      ,' Num Linhas da empresa '
       ,icon = icon("stats",lib='glyphicon')
       ,color = "black")
     
